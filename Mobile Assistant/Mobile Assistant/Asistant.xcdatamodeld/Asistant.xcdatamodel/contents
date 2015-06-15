@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D131" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Options" syncable="YES">
+        <attribute name="attribute" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="tileId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Pages" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Settings" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Tiles" syncable="YES">
+        <attribute name="delegateEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="delegateMobile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="icon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="photoResize" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="safetySend" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="schedule" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sendOnTap" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="sendToCS" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="sendToEmail" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="sendToMobile" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="subject" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usernameCS" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Settings" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="Pages" positionX="-54" positionY="9" width="128" height="75"/>
+        <element name="Tiles" positionX="-36" positionY="27" width="128" height="285"/>
+        <element name="Options" positionX="-18" positionY="153" width="128" height="90"/>
+    </elements>
+</model>

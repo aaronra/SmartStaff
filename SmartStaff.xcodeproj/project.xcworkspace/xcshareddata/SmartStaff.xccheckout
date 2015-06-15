@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F338787D-1556-4E17-9D33-0C6ABA7ECCC4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>cb8ee27d-94fd-403a-91c6-30f6653fde9c++4377</key>
+		<string>http://agileboard.cloudstaff.com/svn/smart-staff-systems-ios-app/branches/1.x.x.x/SStuff</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SmartStaff.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>cb8ee27d-94fd-403a-91c6-30f6653fde9c++4377</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>cb8ee27d-94fd-403a-91c6-30f6653fde9c++4377</key>
+		<string>http://agileboard.cloudstaff.com/svn/smart-staff-systems-ios-app</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://agileboard.cloudstaff.com/svn/smart-staff-systems-ios-app/branches/1.x.x.x/SStuff/SmartStaff.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>cb8ee27d-94fd-403a-91c6-30f6653fde9c++4377</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>cb8ee27d-94fd-403a-91c6-30f6653fde9c++4377</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SStuff</string>
+		</dict>
+	</array>
+</dict>
+</plist>
