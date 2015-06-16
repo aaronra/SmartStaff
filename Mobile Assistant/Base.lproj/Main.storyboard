@@ -1894,15 +1894,6 @@ This software is provided by the author "as is" and any express or implied warra
                                             <action selector="RestoreNow:" destination="4ES-yY-iNN" eventType="touchUpInside" id="mWe-Ng-Wzx"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rcq-6E-V1z">
-                                        <rect key="frame" x="36" y="305" width="528" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="4Y9-Sg-w57"/>
-                                        </constraints>
-                                        <color key="textColor" red="0.1092937301" green="0.59644269920000004" blue="0.83455274469999996" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rM-pl-96i">
                                         <rect key="frame" x="36" y="81" width="122" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -1934,6 +1925,15 @@ This software is provided by the author "as is" and any express or implied warra
                                             <action selector="Skip:" destination="4ES-yY-iNN" eventType="touchUpInside" id="Y1X-fx-KEx"/>
                                         </connections>
                                     </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rcq-6E-V1z">
+                                        <rect key="frame" x="36" y="305" width="528" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="4Y9-Sg-w57"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.1092937301" green="0.59644269920000004" blue="0.83455274469999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="UDs-Gh-0Fj" firstAttribute="top" secondItem="rcq-6E-V1z" secondAttribute="bottom" constant="50" id="0ye-Km-QLk"/>

@@ -79,12 +79,17 @@ class LoginSS: UIViewController {
             println("--->>>> \(msg)")
             
             
-            
             if code == 500 {
                 self.alert.alertLogin(msg, viewController: self)
                 
             }else if code == 200{
-                self.performSegueWithIdentifier("toWelcome", sender: self.btnLogin)
+                
+                var myIntValue:Int64 = Int64(0.4)
+                
+                var time = dispatch_time(DISPATCH_TIME_NOW, myIntValue * Int64(NSEC_PER_SEC))
+                dispatch_after(time, dispatch_get_main_queue()) {
+                    self.performSegueWithIdentifier("toWelcome", sender: self.btnLogin)
+                }
                 
             }else {
                 println("ERROR")
