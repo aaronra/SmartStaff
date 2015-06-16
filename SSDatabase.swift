@@ -7,59 +7,60 @@
 //
 
 import Foundation
-import Realm
+//import Realm
 
-class pageTitle: RLMObject{
-    dynamic var pageId = Int()
-    dynamic var title = ""
-    dynamic var tileSet = RLMArray(objectClassName: tileSettings.className())
+//class pageTitle: RLMObject{
+//    dynamic var pageId = Int()
+//    dynamic var title = ""
+//    dynamic var tileSet = RLMArray(objectClassName: tileSettings.className())
+//
+//    override class func primaryKey() -> String! {
+//        return "pageId"
+//    }
+//}
 
-    override class func primaryKey() -> String! {
-        return "pageId"
-    }
-}
+//class userOptions: RLMObject{
+//    dynamic var optionId = ""
+//    dynamic var tileId = ""
+//    dynamic var  value = ""
+//}
 
-class userOptions: RLMObject{
-    dynamic var optionId = ""
-    dynamic var tileId = ""
-    dynamic var  value = ""
-}
+//class tileSettings: RLMObject{
+//    dynamic var titleId  = Int()
+//    dynamic var pageId = ""
+//    dynamic var title = ""
+//    dynamic var icon = ""
+//    dynamic var csUsername = ""
+//    dynamic var sendToCS = ""
+//    dynamic var emailAdd = ""
+//    dynamic var sendToEmail = ""
+//    dynamic var mobileNum = ""
+//    dynamic var sendToPhone = ""
+//    dynamic var subject = ""
+//    dynamic var message = ""
+//    dynamic var schedule = ""
+//    dynamic var resizePhoto = ""
+//    dynamic var sendOnTop = ""
+//    dynamic var safetySend = ""
+//    dynamic var useroption = RLMArray(objectClassName: userOptions.className())
+//    
+//    override class func primaryKey() -> String! {
+//        return "titleId"
+//    }
+//}
 
-class tileSettings: RLMObject{
-    dynamic var titleId  = Int()
-    dynamic var pageId = ""
-    dynamic var title = ""
-    dynamic var icon = ""
-    dynamic var csUsername = ""
-    dynamic var sendToCS = ""
-    dynamic var emailAdd = ""
-    dynamic var sendToEmail = ""
-    dynamic var mobileNum = ""
-    dynamic var sendToPhone = ""
-    dynamic var subject = ""
-    dynamic var message = ""
-    dynamic var schedule = ""
-    dynamic var resizePhoto = ""
-    dynamic var sendOnTop = ""
-    dynamic var safetySend = ""
-    dynamic var useroption = RLMArray(objectClassName: userOptions.className())
+//class GenSettings: RLMObject{
+//    dynamic var id = Int()
+//    dynamic var Type = ""
+//    dynamic var Value = ""
+//    dynamic var tileSet = RLMArray(objectClassName: tileSettings.className())
+//    
+//    override class func primaryKey() -> String! {
+//        return "id"
+//    }
+//}
+
     
-    override class func primaryKey() -> String! {
-        return "titleId"
-    }
-}
-
-class GenSettings: RLMObject{
-    dynamic var id = Int()
-    dynamic var Type = ""
-    dynamic var Value = ""
-    dynamic var tileSet = RLMArray(objectClassName: tileSettings.className())
-    
-    override class func primaryKey() -> String! {
-        return "id"
-    }
-    
-    }
 
 
 class Realm: NSObject{

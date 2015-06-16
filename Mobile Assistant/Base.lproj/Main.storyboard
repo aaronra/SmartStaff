@@ -116,6 +116,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2kv-jo-nwU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ptr-gg-qbD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2l-49-txv">
@@ -317,7 +318,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cdh-qc-Nxu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1956" y="-2340"/>
+            <point key="canvasLocation" x="-1914" y="-2388"/>
         </scene>
         <!--Barcode Scanner-->
         <scene sceneID="SiZ-BI-FwP">
@@ -347,7 +348,7 @@
                 <pageViewController storyboardIdentifier="HelpPageController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="YSE-oI-7m9" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lty-7u-0xu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1996" y="-2340"/>
+            <point key="canvasLocation" x="-2023.5" y="-2308"/>
         </scene>
         <!--Choose an Icon-->
         <scene sceneID="fkS-hd-iET">
@@ -1145,7 +1146,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DSk-hF-Cic" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1639.5" y="-2491"/>
+            <point key="canvasLocation" x="-1315.5" y="-2449"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="6mx-BA-ESA">
@@ -1278,7 +1279,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iu6-ui-VVr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iu6-ui-VVr">
                                 <rect key="frame" x="200" y="458" width="200" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Zfi-Ji-30Q"/>
@@ -1287,7 +1288,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Copyright (c) 2015 Cloudstaff. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8Ht-Vc-LZe">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) 2015 Cloudstaff. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8Ht-Vc-LZe">
                                 <rect key="frame" x="182" y="487" width="237" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="237" id="uT1-sI-ALm"/>
@@ -1295,7 +1296,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="SmartStaff Large" translatesAutoresizingMaskIntoConstraints="NO" id="dsw-fl-Dl0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="SmartStaff Large" translatesAutoresizingMaskIntoConstraints="NO" id="dsw-fl-Dl0">
                                 <rect key="frame" x="140" y="144" width="318" height="340"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="uUy-Nu-I7h"/>
@@ -1502,12 +1503,6 @@ This software is provided by the author "as is" and any express or implied warra
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vXR-h9-4H9" id="0YI-Hu-MWH">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fourth Page" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37y-NC-ob5">
-                                                    <rect key="frame" x="15" y="11" width="100" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MtQ-7A-EoP">
                                                     <rect key="frame" x="442" y="7" width="150" height="30"/>
                                                     <constraints>
@@ -1517,6 +1512,12 @@ This software is provided by the author "as is" and any express or implied warra
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fourth Page" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37y-NC-ob5">
+                                                    <rect key="frame" x="15" y="11" width="100" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="MtQ-7A-EoP" firstAttribute="trailing" secondItem="0YI-Hu-MWH" secondAttribute="trailingMargin" id="KLC-pI-nGO"/>
@@ -1529,12 +1530,6 @@ This software is provided by the author "as is" and any express or implied warra
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h0e-zH-LII" id="K5J-pO-3Pp">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fifth Page" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02i-x2-3e0">
-                                                    <rect key="frame" x="15" y="11" width="100" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oVe-cW-i6B">
                                                     <rect key="frame" x="442" y="7" width="150" height="30"/>
                                                     <constraints>
@@ -1544,6 +1539,12 @@ This software is provided by the author "as is" and any express or implied warra
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fifth Page" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02i-x2-3e0">
+                                                    <rect key="frame" x="15" y="11" width="100" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="centerY" secondItem="oVe-cW-i6B" secondAttribute="centerY" constant="-0.5" id="2hi-9i-WxO"/>
@@ -1645,12 +1646,6 @@ This software is provided by the author "as is" and any express or implied warra
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fPx-mJ-u7E" id="rxM-pV-3w8">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mobile Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slH-lQ-9KV">
-                                                    <rect key="frame" x="15" y="11" width="120" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1vu-wh-Rtl">
                                                     <rect key="frame" x="442" y="7" width="150" height="30"/>
                                                     <constraints>
@@ -1660,6 +1655,12 @@ This software is provided by the author "as is" and any express or implied warra
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mobile Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slH-lQ-9KV">
+                                                    <rect key="frame" x="15" y="11" width="120" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="1vu-wh-Rtl" firstAttribute="trailing" secondItem="rxM-pV-3w8" secondAttribute="trailingMargin" id="UZ8-K5-Qe5"/>
@@ -1697,7 +1698,7 @@ This software is provided by the author "as is" and any express or implied warra
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FxU-TU-Lkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1320" y="-786"/>
+            <point key="canvasLocation" x="-533" y="9"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QVf-FA-PPK">
@@ -1909,9 +1910,9 @@ This software is provided by the author "as is" and any express or implied warra
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you have a Backup Code or Customer Code, enter it now." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEx-56-Aot">
-                                        <rect key="frame" x="36" y="192" width="250" height="65"/>
+                                        <rect key="frame" x="36" y="192" width="528" height="65"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="250" id="Gbq-hl-XBZ"/>
+                                            <constraint firstAttribute="width" constant="528" id="Gbq-hl-XBZ"/>
                                             <constraint firstAttribute="height" constant="65" id="SEE-OP-rKk"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -1972,7 +1973,7 @@ This software is provided by the author "as is" and any express or implied warra
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4r-lz-Dyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2008.5" y="-3089"/>
+            <point key="canvasLocation" x="-2009" y="-3089"/>
         </scene>
         <!--Startup Two View Controller-->
         <scene sceneID="LNA-Kb-92J">
@@ -2492,7 +2493,7 @@ This software is provided by the author "as is" and any express or implied warra
                                             <constraint firstAttribute="height" constant="39" id="ice-dK-LU3"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="G4r-Pa-psb"/>
@@ -2530,7 +2531,7 @@ This software is provided by the author "as is" and any express or implied warra
                                             </mask>
                                         </variation>
                                         <connections>
-                                            <segue destination="4ES-yY-iNN" kind="presentation" identifier="toStartupWizard" id="VkH-aS-wnb"/>
+                                            <action selector="login:" destination="gbG-9t-OiB" eventType="touchUpInside" id="suZ-9Z-Q0k"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psB-To-Lar">
@@ -2582,7 +2583,7 @@ This software is provided by the author "as is" and any express or implied warra
                                         </variation>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="5tG-EP-zgx" secondAttribute="trailing" id="20r-xU-uX2"/>
                                     <constraint firstItem="5tG-EP-zgx" firstAttribute="top" secondItem="Pcd-Dk-qwt" secondAttribute="bottom" constant="1" id="458-ad-ezR"/>
@@ -2677,7 +2678,7 @@ This software is provided by the author "as is" and any express or implied warra
                                 </variation>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="sdc-ql-UZm" secondAttribute="trailing" constant="-16" id="7sd-xD-UZy"/>
                             <constraint firstItem="sdc-ql-UZm" firstAttribute="top" secondItem="u46-Lu-Xub" secondAttribute="topMargin" id="Jog-QS-9cE"/>
@@ -2711,15 +2712,15 @@ This software is provided by the author "as is" and any express or implied warra
                         <outlet property="btnForgot" destination="psB-To-Lar" id="pD6-Zw-Xf2"/>
                         <outlet property="btnLogin" destination="5tG-EP-zgx" id="oWT-42-TYt"/>
                         <outlet property="btnSignup" destination="w8w-S9-7NZ" id="UD1-hY-OgB"/>
-                        <outlet property="login" destination="sdc-ql-UZm" id="OVV-XN-9Si"/>
                         <outlet property="scrollView" destination="sdc-ql-UZm" id="O4e-lE-4X9"/>
                         <outlet property="txtEmail" destination="i54-jM-gis" id="TYM-de-Rpy"/>
                         <outlet property="txtPassword" destination="Pcd-Dk-qwt" id="y8q-qL-l8Q"/>
+                        <segue destination="4ES-yY-iNN" kind="presentation" identifier="toWelcome" id="WE5-AQ-XE5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cbt-iz-zOw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2691" y="-2622"/>
+            <point key="canvasLocation" x="-2723" y="-3089"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vK3-7a-tLa">
@@ -2772,15 +2773,15 @@ This software is provided by the author "as is" and any express or implied warra
         <image name="text" width="60" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KCH-rC-Qfo"/>
-        <segue reference="C7p-aV-x74"/>
-        <segue reference="O4e-GG-dwn"/>
-        <segue reference="5PB-0E-V0W"/>
-        <segue reference="eRy-Ha-mzM"/>
+        <segue reference="c5Q-Zq-m5U"/>
         <segue reference="yTR-7j-z6d"/>
+        <segue reference="O4e-GG-dwn"/>
+        <segue reference="KCH-rC-Qfo"/>
+        <segue reference="eRy-Ha-mzM"/>
         <segue reference="Ncn-eP-jCx"/>
-        <segue reference="1i9-iA-3x6"/>
         <segue reference="fvE-9Z-m27"/>
-        <segue reference="EdN-R1-TKk"/>
+        <segue reference="1i9-iA-3x6"/>
+        <segue reference="8hh-we-Aoh"/>
+        <segue reference="rbC-TF-He4"/>
     </inferredMetricsTieBreakers>
 </document>

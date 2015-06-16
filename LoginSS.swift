@@ -11,6 +11,9 @@ import Foundation
 
 class LoginSS: UIViewController {
 
+    
+    var alert = AlertDialogs()
+    
     @IBOutlet weak var scrollView: UIScrollView!
 
     @IBOutlet weak var txtEmail: UITextField!
@@ -52,6 +55,46 @@ class LoginSS: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWasShown:", name: UIKeyboardWillHideNotification, object: nil)
     }
     
+    
+    @IBAction func login(sender: AnyObject) {
+        
+        if ConnectionDetector.isConnectedToNetwork() {
+            
+            
+            
+            loginfunc()
+        }else {
+            alert.alertLogin("No Internet Connection", viewController: self)
+        }
+        
+    }
+
+    
+    func loginfunc() {
+        
+        
+        APIFunctions.postLogin(["username" : txtEmail.text, "password": txtPassword.text], url: "http://10.1.100.59/csa/login.json") { (code : Int, msg : String) -> () in
+            
+            println("--->>>> \(code)")
+            println("--->>>> \(msg)")
+            
+            
+            
+            if code == 500 {
+                self.alert.alertLogin(msg, viewController: self)
+                
+            }else if code == 200{
+                self.performSegueWithIdentifier("toWelcome", sender: self.btnLogin)
+                
+            }else {
+                println("ERROR")
+            }
+            
+        }
+        
+    }
+    
+    
     func keyboardWasShown(notification: NSNotification) {
         var info: Dictionary = notification.userInfo!
         var keyboardSize: CGSize = (info[UIKeyboardFrameBeginUserInfoKey]?.CGRectValue().size)!
@@ -72,9 +115,15 @@ class LoginSS: UIViewController {
         self.scrollView.setContentOffset(CGPointZero, animated: true)
     }
     
-    @IBOutlet weak var login: UIScrollView!
-    override func performSegueWithIdentifier(identifier: String?, sender: AnyObject?) {
-        performSegueWithIdentifier("toStartupWizard", sender: self)
-    }
     
-    }
+}
+
+
+
+
+
+
+
+
+
+

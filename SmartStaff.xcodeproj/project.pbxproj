@@ -44,10 +44,11 @@
 		60E9C6251B156316004D6D6F /* SSMapview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E9C6241B156316004D6D6F /* SSMapview.swift */; };
 		60EA50D11B1D487C0015C2D1 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EA50D01B1D487C0015C2D1 /* MessageUI.framework */; };
 		60EBCAA31B0170DA0071D1C4 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EBCAA21B0170DA0071D1C4 /* libc++.dylib */; };
-		60EBCAA61B0171090071D1C4 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EBCAA51B0171090071D1C4 /* Realm.framework */; };
-		60EBCAA81B0171140071D1C4 /* RLMSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EBCAA71B0171140071D1C4 /* RLMSupport.swift */; };
 		60EBCAAA1B0171C90071D1C4 /* SSDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EBCAA91B0171C90071D1C4 /* SSDatabase.swift */; };
 		60F013641B1C35620068B1AF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F013631B1C35620068B1AF /* AVFoundation.framework */; };
+		9CFD57A41B2FAD9D00CD9935 /* APIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD57A31B2FAD9D00CD9935 /* APIFunctions.swift */; };
+		9CFD57A61B2FB1E900CD9935 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD57A51B2FB1E900CD9935 /* Extensions.swift */; };
+		9CFD57AC1B2FB8B400CD9935 /* ConnectionDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD57AB1B2FB8B400CD9935 /* ConnectionDetector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,10 +103,13 @@
 		60E9C6241B156316004D6D6F /* SSMapview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSMapview.swift; sourceTree = "<group>"; };
 		60EA50D01B1D487C0015C2D1 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		60EBCAA21B0170DA0071D1C4 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
-		60EBCAA51B0171090071D1C4 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../realm-cocoa-0.91.5/ios/Realm.framework"; sourceTree = "<group>"; };
-		60EBCAA71B0171140071D1C4 /* RLMSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLMSupport.swift; sourceTree = "<group>"; };
 		60EBCAA91B0171C90071D1C4 /* SSDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SSDatabase.swift; path = ../SSDatabase.swift; sourceTree = "<group>"; };
 		60F013631B1C35620068B1AF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9CFD57A31B2FAD9D00CD9935 /* APIFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFunctions.swift; sourceTree = "<group>"; };
+		9CFD57A51B2FB1E900CD9935 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9CFD57A71B2FB23F00CD9935 /* SmartStaff-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmartStaff-Bridging-Header.h"; sourceTree = "<group>"; };
+		9CFD57AA1B2FB2EA00CD9935 /* CommonCryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonCryptor.h; sourceTree = "<group>"; };
+		9CFD57AB1B2FB8B400CD9935 /* ConnectionDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionDetector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +122,6 @@
 				6055CA191B17F012008C7D95 /* QuartzCore.framework in Frameworks */,
 				60E9C6211B153A31004D6D6F /* CoreLocation.framework in Frameworks */,
 				60E2369B1B14485A0054F8BD /* MapKit.framework in Frameworks */,
-				60EBCAA61B0171090071D1C4 /* Realm.framework in Frameworks */,
 				60EBCAA31B0170DA0071D1C4 /* libc++.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +190,11 @@
 				5D4F05721ADCF43D000D9916 /* StartupFiveViewController.swift */,
 				5D4F05741ADE417B000D9916 /* TextEditorViewController.swift */,
 				5DD578A41AE4861A0011630E /* Toast */,
+				9CFD57A31B2FAD9D00CD9935 /* APIFunctions.swift */,
+				9CFD57A51B2FB1E900CD9935 /* Extensions.swift */,
+				9CFD57AA1B2FB2EA00CD9935 /* CommonCryptor.h */,
+				9CFD57A71B2FB23F00CD9935 /* SmartStaff-Bridging-Header.h */,
+				9CFD57AB1B2FB8B400CD9935 /* ConnectionDetector.swift */,
 			);
 			name = "Mobile SmartStaff";
 			path = "Mobile Assistant";
@@ -242,10 +250,8 @@
 				60F013631B1C35620068B1AF /* AVFoundation.framework */,
 				6055CA181B17F012008C7D95 /* QuartzCore.framework */,
 				60E9C6201B153A31004D6D6F /* CoreLocation.framework */,
-				60EBCAA51B0171090071D1C4 /* Realm.framework */,
 				60E2369A1B1448590054F8BD /* MapKit.framework */,
 				60EBCAA21B0170DA0071D1C4 /* libc++.dylib */,
-				60EBCAA71B0171140071D1C4 /* RLMSupport.swift */,
 			);
 			name = Framework;
 			sourceTree = "<group>";
@@ -359,6 +365,7 @@
 				5DD578A81AE486680011630E /* HRToast+UIView.swift in Sources */,
 				5DD6950B1AC3D5A8004B7497 /* GSettingsTableViewController.swift in Sources */,
 				5D4F05751ADE417B000D9916 /* TextEditorViewController.swift in Sources */,
+				9CFD57A41B2FAD9D00CD9935 /* APIFunctions.swift in Sources */,
 				5DD6950D1AC3D882004B7497 /* TileCell.swift in Sources */,
 				5D202E6D1ABBC33500375C9C /* SideBarTableViewController.swift in Sources */,
 				60E9C6231B153A6E004D6D6F /* LocationManager.swift in Sources */,
@@ -373,6 +380,7 @@
 				60EBCAAA1B0171C90071D1C4 /* SSDatabase.swift in Sources */,
 				5D4F05731ADCF43D000D9916 /* StartupFiveViewController.swift in Sources */,
 				5D202E4A1ABBBFE100375C9C /* AppDelegate.swift in Sources */,
+				9CFD57A61B2FB1E900CD9935 /* Extensions.swift in Sources */,
 				5D4F056F1ADCF41C000D9916 /* StartupThreeViewController.swift in Sources */,
 				5D4F056D1ADCF3DE000D9916 /* StartupTwoViewController.swift in Sources */,
 				60E143451B0C18D500D4207C /* LoginSS.swift in Sources */,
@@ -380,9 +388,9 @@
 				5DD3C2821ADB46FD00E8B864 /* IconCell.swift in Sources */,
 				60E9C6251B156316004D6D6F /* SSMapview.swift in Sources */,
 				60E542A31B2000580017342F /* AudioRecorder.swift in Sources */,
-				60EBCAA81B0171140071D1C4 /* RLMSupport.swift in Sources */,
 				5D9F8B1E1AD7B47C00C3C710 /* IconsCollectionViewController.swift in Sources */,
 				5D4F056B1ADCDA48000D9916 /* StartupOneViewController.swift in Sources */,
+				9CFD57AC1B2FB8B400CD9935 /* ConnectionDetector.swift in Sources */,
 				5D202E711ABBF4F100375C9C /* PageItemController.swift in Sources */,
 				5D3B0DCD1AC92E8500BD8464 /* AboutCSViewController.swift in Sources */,
 			);
@@ -509,6 +517,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/rhoverf/Desktop/realm-cocoa-0.91.5/ios",
@@ -517,6 +526,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = SmartStaff;
+				SWIFT_OBJC_BRIDGING_HEADER = "Mobile Assistant/SmartStaff-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -525,6 +536,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/rhoverf/Desktop/realm-cocoa-0.91.5/ios",
@@ -533,6 +545,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = SmartStaff;
+				SWIFT_OBJC_BRIDGING_HEADER = "Mobile Assistant/SmartStaff-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

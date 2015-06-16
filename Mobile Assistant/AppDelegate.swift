@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Realm
 import MapKit
 import CoreLocation
 import QuartzCore
@@ -30,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let prefs = NSUserDefaults.standardUserDefaults()
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        println("PATH --->>> \(RLMRealm.defaultRealm().path)")
+//        println("PATH --->>> \(RLMRealm.defaultRealm().path)")
 
         UINavigationBar.appearance().barTintColor = UIColor(hex: 0x717171)
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor(hex: 0xffffff)]
