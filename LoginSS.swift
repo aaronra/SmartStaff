@@ -29,6 +29,9 @@ class LoginSS: UIViewController {
         let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "hideKeyboard")
         tapGesture.cancelsTouchesInView = false
         scrollView.addGestureRecognizer(tapGesture)
+        
+        btnForgot.hidden = true
+        btnSignup.hidden = true
     }
     
     
