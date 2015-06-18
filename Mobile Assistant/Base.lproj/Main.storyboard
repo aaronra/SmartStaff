@@ -100,12 +100,12 @@
                         <segue destination="Kgy-Yd-dzd" kind="show" identifier="toHelp" id="yTR-7j-z6d"/>
                         <segue destination="gEv-0M-r7z" kind="show" identifier="toAboutApp" id="eRy-Ha-mzM"/>
                         <segue destination="ZKJ-pF-e9l" kind="show" identifier="toAboutCloudstaff" id="O4e-GG-dwn"/>
-                        <segue destination="m2E-oD-KKI" kind="presentation" identifier="toBarcodeScanner" modalTransitionStyle="crossDissolve" id="Pzz-W5-Hsi"/>
+                        <segue destination="StM-zm-4G9" kind="presentation" identifier="toBarcodeScanner" modalTransitionStyle="crossDissolve" id="Pzz-W5-Hsi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="712.5" y="-1093"/>
+            <point key="canvasLocation" x="-3931.5" y="-636"/>
         </scene>
         <!--Audio Record-->
         <scene sceneID="xpQ-qu-cRc">
@@ -193,7 +193,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZWb-ww-myj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2643" y="-1056"/>
+            <point key="canvasLocation" x="3561" y="-1056"/>
         </scene>
         <!--Location-->
         <scene sceneID="roO-MU-yrP">
@@ -263,7 +263,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qtV-c2-96c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2448" y="-1895"/>
+            <point key="canvasLocation" x="4284" y="-1895"/>
         </scene>
         <!--Help Item Controller-->
         <scene sceneID="hcn-Ge-Rjd">
@@ -318,7 +318,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cdh-qc-Nxu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1914" y="-2388"/>
+            <point key="canvasLocation" x="-3648" y="-2623"/>
         </scene>
         <!--Barcode Scanner-->
         <scene sceneID="SiZ-BI-FwP">
@@ -333,6 +333,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ThV-bB-XhI">
+                        <barButtonItem key="leftBarButtonItem" image="backbutton" id="2tC-dg-3ln">
+                            <connections>
+                                <action selector="backMain:" destination="m2E-oD-KKI" id="IPj-sw-RFl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <segue destination="Ac8-K6-pdj" kind="presentation" identifier="toTilemenu" id="C7p-aV-x74"/>
@@ -340,7 +347,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wkh-l3-gtv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3078" y="-698"/>
+            <point key="canvasLocation" x="3225" y="-461"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="AyL-v9-Wcl">
@@ -348,7 +355,7 @@
                 <pageViewController storyboardIdentifier="HelpPageController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="YSE-oI-7m9" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lty-7u-0xu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2023.5" y="-2308"/>
+            <point key="canvasLocation" x="-573" y="-2112"/>
         </scene>
         <!--Choose an Icon-->
         <scene sceneID="fkS-hd-iET">
@@ -410,7 +417,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YBL-Dn-0V5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-560" y="-2332"/>
+            <point key="canvasLocation" x="1560" y="-2039"/>
         </scene>
         <!--About Cloudstaff-->
         <scene sceneID="GZt-eZ-f6k">
@@ -452,7 +459,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0r8-za-ZVB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="87" y="-1587"/>
+            <point key="canvasLocation" x="987" y="-1625"/>
         </scene>
         <!--Tile Settings-->
         <scene sceneID="UJp-s9-PuN">
@@ -1146,7 +1153,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DSk-hF-Cic" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1315.5" y="-2449"/>
+            <point key="canvasLocation" x="157.5" y="-2267"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="6mx-BA-ESA">
@@ -1154,7 +1161,7 @@
                 <pageViewController storyboardIdentifier="PageController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="e1l-ia-wmi" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="teG-2u-FwX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-589.5" y="-1118"/>
+            <point key="canvasLocation" x="190.5" y="-1565"/>
         </scene>
         <!--Help-->
         <scene sceneID="pqA-wq-qRA">
@@ -1174,7 +1181,7 @@
                         <barButtonItem key="leftBarButtonItem" image="backbutton" id="tPl-Lm-aFq">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <action selector="back:" destination="Kgy-Yd-dzd" id="XKP-b9-vku"/>
+                                <action selector="back:" destination="Kgy-Yd-dzd" id="6sh-Ow-C7N"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1184,7 +1191,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tKG-Ig-zIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-580.5" y="-786"/>
+            <point key="canvasLocation" x="-745.5" y="-303"/>
+        </scene>
+        <!--Help-->
+        <scene sceneID="8hq-QU-g7X">
+            <objects>
+                <viewController id="sg6-5q-Gqu" customClass="HelpView" customModule="SmartStaff" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uBP-if-wM9"/>
+                        <viewControllerLayoutGuide type="bottom" id="meo-iu-5Ny"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IPz-ZL-7nT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Help" id="unM-gS-iwf"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <segue destination="Ac8-K6-pdj" kind="presentation" identifier="toTiles" id="luo-x7-ayA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K88-AE-RG7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2937" y="-1181"/>
         </scene>
         <!--Page Item Controller-->
         <scene sceneID="j7j-5Q-krm">
@@ -1265,7 +1295,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XlC-GI-6tt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1450.5" y="-1275"/>
+            <point key="canvasLocation" x="-2125.5" y="-1089"/>
         </scene>
         <!--About This App-->
         <scene sceneID="2iL-OO-Poa">
@@ -1279,7 +1309,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iu6-ui-VVr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iu6-ui-VVr">
                                 <rect key="frame" x="200" y="458" width="200" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Zfi-Ji-30Q"/>
@@ -1288,7 +1318,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) 2015 Cloudstaff. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8Ht-Vc-LZe">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Copyright (c) 2015 Cloudstaff. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8Ht-Vc-LZe">
                                 <rect key="frame" x="182" y="487" width="237" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="237" id="uT1-sI-ALm"/>
@@ -1296,7 +1326,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="SmartStaff Large" translatesAutoresizingMaskIntoConstraints="NO" id="dsw-fl-Dl0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="SmartStaff Large" translatesAutoresizingMaskIntoConstraints="NO" id="dsw-fl-Dl0">
                                 <rect key="frame" x="140" y="144" width="318" height="340"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="uUy-Nu-I7h"/>
@@ -1349,7 +1379,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="end-ge-ESQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="721.5" y="-1676"/>
+            <point key="canvasLocation" x="-4246.5" y="333"/>
         </scene>
         <!--Disclaimer-->
         <scene sceneID="wAL-16-OOd">
@@ -1404,7 +1434,7 @@ This software is provided by the author "as is" and any express or implied warra
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yCO-Lg-9Ag" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-856.5" y="-1093"/>
+            <point key="canvasLocation" x="-829.5" y="-1641"/>
         </scene>
         <!--General Settings-->
         <scene sceneID="dud-pI-LJl">
@@ -1716,25 +1746,7 @@ This software is provided by the author "as is" and any express or implied warra
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ALG-nD-VZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1260" y="-750"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="OHc-tH-Rqx">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7x6-ag-cVA" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="496-QY-aG0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Kgy-Yd-dzd" kind="relationship" relationship="rootViewController" id="McA-Tx-XEd"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kPH-UZ-XRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-612" y="-843"/>
+            <point key="canvasLocation" x="-1414.5" y="-71"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ECL-zQ-QCZ">
@@ -1752,7 +1764,7 @@ This software is provided by the author "as is" and any express or implied warra
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7mS-sO-zM2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2220" y="-857"/>
+            <point key="canvasLocation" x="-45" y="-690"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="U3c-9Q-Url">
@@ -1788,7 +1800,7 @@ This software is provided by the author "as is" and any express or implied warra
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQF-JU-mJd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1635" y="-691"/>
+            <point key="canvasLocation" x="1794" y="-475"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1Yh-ca-XHK">
@@ -1806,7 +1818,7 @@ This software is provided by the author "as is" and any express or implied warra
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ei8-m8-603" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="128" y="-2372"/>
+            <point key="canvasLocation" x="256.5" y="-2056"/>
         </scene>
         <!--Text Editor-->
         <scene sceneID="Omw-Bn-OEX">
@@ -1844,7 +1856,7 @@ This software is provided by the author "as is" and any express or implied warra
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ki0-nZ-Sjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1000.5" y="-2322"/>
+            <point key="canvasLocation" x="2239.5" y="-2088"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UIK-Lg-pJ8">
@@ -1862,7 +1874,7 @@ This software is provided by the author "as is" and any express or implied warra
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="60Q-Z5-2Aw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-597" y="-2286"/>
+            <point key="canvasLocation" x="1099.5" y="-2237"/>
         </scene>
         <!--Startup One View Controller-->
         <scene sceneID="mLr-6W-L78">
@@ -1892,6 +1904,7 @@ This software is provided by the author "as is" and any express or implied warra
                                         </state>
                                         <connections>
                                             <action selector="RestoreNow:" destination="4ES-yY-iNN" eventType="touchUpInside" id="mWe-Ng-Wzx"/>
+                                            <segue destination="hzs-hv-FTC" kind="presentation" identifier="toHelpView" id="h72-gI-Abn"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rM-pl-96i">
@@ -1900,7 +1913,7 @@ This software is provided by the author "as is" and any express or implied warra
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you have a Backup Code or Customer Code, enter it now." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEx-56-Aot">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="If you have a Backup Code or Customer Code, enter it now." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEx-56-Aot">
                                         <rect key="frame" x="36" y="192" width="528" height="65"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="Gbq-hl-XBZ">
@@ -1984,7 +1997,6 @@ This software is provided by the author "as is" and any express or implied warra
                         <outlet property="txtCode" destination="rcq-6E-V1z" id="CT7-1C-9gz"/>
                         <outlet property="welcome" destination="f6x-3T-s0n" id="Kxs-i0-hY6"/>
                         <segue destination="05a-uR-d58" kind="presentation" identifier="toStartupTwo" modalTransitionStyle="crossDissolve" id="Kq1-KC-S53"/>
-                        <segue destination="7x6-ag-cVA" kind="presentation" identifier="toHelpScreen" modalTransitionStyle="crossDissolve" id="Ncn-eP-jCx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4r-lz-Dyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2344,6 +2356,7 @@ This software is provided by the author "as is" and any express or implied warra
                                         </state>
                                         <connections>
                                             <action selector="Next:" destination="a56-01-pfN" eventType="touchUpInside" id="7ZZ-Fs-YAQ"/>
+                                            <segue destination="hzs-hv-FTC" kind="presentation" identifier="toHelpView" id="fUG-IH-Ppt"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AJN-p4-kD0">
@@ -2420,7 +2433,6 @@ This software is provided by the author "as is" and any express or implied warra
                         <outlet property="delegatesMobile" destination="ZRQ-6N-Ec0" id="J2X-kd-Qbg"/>
                         <outlet property="scrollView" destination="ZRQ-6N-Ec0" id="Xqz-85-RgM"/>
                         <outlet property="txtCode" destination="AJN-p4-kD0" id="KbU-hp-Vzv"/>
-                        <segue destination="7x6-ag-cVA" kind="presentation" identifier="toHelpScreen" modalTransitionStyle="crossDissolve" id="aab-qv-rxz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dh3-GL-qHn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2443,7 +2455,7 @@ This software is provided by the author "as is" and any express or implied warra
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1lc-bt-Gu2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="790" y="-2372"/>
+            <point key="canvasLocation" x="1707" y="-2372"/>
         </scene>
         <!--LoginSS-->
         <scene sceneID="2bb-dY-CsP">
@@ -2755,7 +2767,7 @@ This software is provided by the author "as is" and any express or implied warra
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eMr-XP-lHE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1617" y="-1782"/>
+            <point key="canvasLocation" x="3453" y="-1782"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RBN-vg-kvt">
@@ -2773,7 +2785,43 @@ This software is provided by the author "as is" and any express or implied warra
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6JD-vK-Q7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1647" y="-1107"/>
+            <point key="canvasLocation" x="2565" y="-1107"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EQB-AK-nvp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="StM-zm-4G9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2nr-b1-hTa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="m2E-oD-KKI" kind="relationship" relationship="rootViewController" id="g5r-pO-NCa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EBc-eQ-5yR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2520" y="-366"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="INM-tT-UuL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hzs-hv-FTC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="h5I-pb-L7c">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sg6-5q-Gqu" kind="relationship" relationship="rootViewController" id="uDO-Be-PaD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="njg-xk-d58" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2385" y="-2039"/>
         </scene>
     </scenes>
     <resources>
@@ -2789,15 +2837,14 @@ This software is provided by the author "as is" and any express or implied warra
         <image name="text" width="60" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="c5Q-Zq-m5U"/>
-        <segue reference="yTR-7j-z6d"/>
-        <segue reference="O4e-GG-dwn"/>
         <segue reference="KCH-rC-Qfo"/>
+        <segue reference="C7p-aV-x74"/>
+        <segue reference="O4e-GG-dwn"/>
         <segue reference="eRy-Ha-mzM"/>
-        <segue reference="Ncn-eP-jCx"/>
-        <segue reference="fvE-9Z-m27"/>
-        <segue reference="1i9-iA-3x6"/>
+        <segue reference="5PB-0E-V0W"/>
+        <segue reference="fUG-IH-Ppt"/>
+        <segue reference="Wz2-zK-Ty3"/>
         <segue reference="8hh-we-Aoh"/>
-        <segue reference="rbC-TF-He4"/>
+        <segue reference="fvE-9Z-m27"/>
     </inferredMetricsTieBreakers>
 </document>

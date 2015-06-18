@@ -11,6 +11,9 @@ import AVFoundation
 
 class CSABarcodeScanner: UIViewController, AVCaptureMetadataOutputObjectsDelegate, UIAlertViewDelegate{
     
+    @IBAction func backMain(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     
 //    @IBOutlet weak var BarcodeMessage: UILabel!
     var alert = AlertDialogs()

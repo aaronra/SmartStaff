@@ -14,7 +14,7 @@ import AVFoundation
 import SpriteKit
 import MessageUI
 
-class ViewController: UIViewController, SideBarDelegate, UIPageViewControllerDataSource, UINavigationControllerDelegate, NSFetchedResultsControllerDelegate, UIImagePickerControllerDelegate, AVAudioRecorderDelegate {
+class ViewController: UIViewController, SideBarDelegate, UIPageViewControllerDataSource, UINavigationControllerDelegate, NSFetchedResultsControllerDelegate, UIImagePickerControllerDelegate, AVAudioRecorderDelegate,UIActionSheetDelegate {
     
     // MARK: - Variables
     private var pageViewController: UIPageViewController?
@@ -52,6 +52,7 @@ class ViewController: UIViewController, SideBarDelegate, UIPageViewControllerDat
         let managedObjectContext = self.managedObjectContext!
         
         var audioRecorder:AVAudioRecorder!
+        
         /* `NSFetchRequest` config
         fetch all `Item`s
         order them alphabetically by name
@@ -84,14 +85,12 @@ class ViewController: UIViewController, SideBarDelegate, UIPageViewControllerDat
         super.viewDidLoad()
         
         sideBar = SideBar(sourceView: self.view, menuItems:
-            ["Scan Barcodes",
-                "Backup",
+            ["Backup",
                 "Restore",
                 "Settings",
                 "Help",
                 "DISCLAIMER",
                 "About this App",
-                "About Cloudstaff",
                 "Exit"])
         sideBar.delegate = self
         
@@ -119,6 +118,7 @@ class ViewController: UIViewController, SideBarDelegate, UIPageViewControllerDat
         addChildViewController(pageViewController!)
         self.view.addSubview(pageViewController!.view)
         pageViewController!.didMoveToParentViewController(self)
+        
     }
 
     
@@ -193,34 +193,71 @@ class ViewController: UIViewController, SideBarDelegate, UIPageViewControllerDat
     }
     
     func sideBarDidSelectButtonAtIndex(index: Int) {
-        if index == 0{
-            performSegueWithIdentifier("toBarcodeScanner", sender: self)
+       if index == 0{
+            sideBar.showSideBar(false)
+        var inputTextField: UITextField?
+        
+        //Create the AlertController
+        let actionSheetController: UIAlertController = UIAlertController(title: "Backup Code", message: "All templates have been saved on cloud servers, you can use the following code to restore them.", preferredStyle: .Alert)
+        
+        
+        //Create and an option action
+        let nextAction: UIAlertAction = UIAlertAction(title: "OK", style: .Default) { action -> Void in
+            //Do some other stuff
         }
-        else if index == 1{
+        actionSheetController.addAction(nextAction)
+        //Add a text field
+        actionSheetController.addTextFieldWithConfigurationHandler { textField -> Void in
+            // you can use this text field
+            inputTextField = textField
+        }
+        
+        
+        //Present the AlertController
+        self.presentViewController(actionSheetController, animated: true, completion: nil)
+        } else if index == 1 {
             sideBar.showSideBar(false)
-        } else if index == 2 {
-            sideBar.showSideBar(false)
+        var inputTextField: UITextField?
+        
+        //Create the AlertController
+        let actionSheetController: UIAlertController = UIAlertController(title: "Restore", message: "Please enter the code to get your templates back", preferredStyle: .Alert)
+        
+        
+        //Create and an option action
+        let Ok: UIAlertAction = UIAlertAction(title: "OK", style: .Default) { action -> Void in
+            //Do some other stuff
+        }
+        let Cancel = UIAlertAction(title: "Cancel", style: .Default, handler: { (action) -> Void in
+        })
+        
+        actionSheetController.addAction(Ok)
+        actionSheetController.addAction(Cancel)
+        
+        //Add a text field
+        actionSheetController.addTextFieldWithConfigurationHandler { textField -> Void in
+            // you can use this text field
+            inputTextField = textField
+        }
+        //Present the AlertController
+        self.presentViewController(actionSheetController, animated: true, completion: nil)
+
             println("second")
-        } else if index == 3 {
+        } else if index == 2 {
             performSegueWithIdentifier("toGeneralSettings", sender: self)
             sideBar.showSideBar(false)
-        } else if index == 4 {
+        } else if index == 3 {
             performSegueWithIdentifier("toHelp", sender: self)
             sideBar.showSideBar(false)
             println("fourth")
-        } else if index == 5 {
+        } else if index == 4 {
             performSegueWithIdentifier("toDisclaimer", sender: self)
             sideBar.showSideBar(false)
             println("fifth")
-        } else if index == 6 {
+        } else if index == 5 {
             performSegueWithIdentifier("toAboutApp", sender: self)
             sideBar.showSideBar(false)
             println("fourth")
-        } else if index == 7 {
-            performSegueWithIdentifier("toAboutCloudstaff", sender: self)
-            sideBar.showSideBar(false)
-            println("fifth")
-        } else if index == 8 {
+        } else if index == 6 {
             exit(0)
         }
     }
@@ -307,23 +344,48 @@ class ViewController: UIViewController, SideBarDelegate, UIPageViewControllerDat
     
     @IBAction func takePhoto(sender: AnyObject) {
         
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera){
+        let title = "Choose an Action"
+        let message = ""
+        let optionOneText = "Barcode Scanner"
+        let optionTwoText = "Camera"
+        let cancelButtonTitle = "Cancel"
+        
+        let actionsheet = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.ActionSheet)
+        
+        let BarcodeButton = UIAlertAction(title: optionOneText, style: UIAlertActionStyle.Default) { (BarcodeScannerSelected) -> Void in
+            self.performSegueWithIdentifier("toBarcodeScanner", sender: self)
+        }
+        let Camera =  UIAlertAction(title: optionTwoText, style: UIAlertActionStyle.Default) { (CameraSelected) -> Void in
             
-            imagePicker.delegate = self
-            imagePicker.sourceType = UIImagePickerControllerSourceType.Camera;
-            imagePicker.allowsEditing = false
-            let image = UIGraphicsGetImageFromCurrentImageContext()
-            UIGraphicsEndImageContext()
-            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+            UIImagePickerController.isSourceTypeAvailable(.Camera)
+            var picker : UIImagePickerController = UIImagePickerController()
+            self.imagePicker.delegate = self
+            self.imagePicker.sourceType = UIImagePickerControllerSourceType.Camera;
+            self.imagePicker.allowsEditing = false
             
-            self.presentViewController(imagePicker, animated: true, completion: nil)
+            //            let image = UIGraphicsGetImageFromCurrentImageContext()
+            //            UIGraphicsEndImageContext()
+            //            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+            
+            self.presentViewController(self.imagePicker, animated: true, completion: nil)
             
             
             println("take a photo")
-        
-    
-                    }
+            
         }
+        let Cancel = UIAlertAction(title: cancelButtonTitle, style: UIAlertActionStyle.Cancel){ (CancelSelected) -> Void in
+            
+        }
+        
+        actionsheet.addAction(BarcodeButton)
+        
+        actionsheet.addAction(Camera)
+        
+        actionsheet.addAction(Cancel)
+        
+        self.presentViewController(actionsheet, animated: true, completion: nil)
+    
+    }
     
     
     @IBAction func editText(sender: UIButton) {

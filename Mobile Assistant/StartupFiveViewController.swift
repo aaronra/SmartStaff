@@ -91,7 +91,7 @@ class StartupFiveViewController: UIViewController {
     }
     
     @IBAction func Next(sender: UIButton) {
-                self.performSegueWithIdentifier("toHelpScreen", sender: self)
+                self.performSegueWithIdentifier("toHelpView", sender: self)
     }
    
 

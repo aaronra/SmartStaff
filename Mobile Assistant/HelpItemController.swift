@@ -38,6 +38,8 @@ class HelpItemController: UIViewController {
     
     @IBAction func back(sender: UIButton) {
         performSegueWithIdentifier("toTiles", sender: self)
+        
     }
-
+    
+    
 }

@@ -9,6 +9,7 @@
 import UIKit
 
 class HelpViewController: UIViewController, UIPageViewControllerDataSource, UINavigationControllerDelegate {
+    @IBOutlet weak var Back: UIBarButtonItem!
 
     
     private var pageViewController: UIPageViewController?
@@ -42,12 +43,14 @@ class HelpViewController: UIViewController, UIPageViewControllerDataSource, UINa
     
     func skip(sender: UIBarButtonItem) {
         performSegueWithIdentifier("toTiles", sender: self)
+        
+        
     }
-
-    @IBAction func back(sender: UIBarButtonItem) {
-        navigationController?.popViewControllerAnimated(true)
-    }
+   
     
+    @IBAction func back(sender: AnyObject) {
+        performSegueWithIdentifier("toTiles", sender: self)
+    }
     private func createPageViewController() {
         
         let pageController = self.storyboard!.instantiateViewControllerWithIdentifier("HelpPageController") as! UIPageViewController

@@ -89,7 +89,10 @@ class StartupOneViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func RestoreNow(sender: UIButton) {
-        self.performSegueWithIdentifier("toHelpScreen", sender: self)
+        
+        self.performSegueWithIdentifier("toHelpView", sender: self)
+        
+
     }
 
     @IBAction func Skip(sender: UIButton) {

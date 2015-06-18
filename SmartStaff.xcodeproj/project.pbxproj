@@ -45,6 +45,7 @@
 		60EA50D11B1D487C0015C2D1 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EA50D01B1D487C0015C2D1 /* MessageUI.framework */; };
 		60EBCAA31B0170DA0071D1C4 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EBCAA21B0170DA0071D1C4 /* libc++.dylib */; };
 		60EBCAAA1B0171C90071D1C4 /* SSDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EBCAA91B0171C90071D1C4 /* SSDatabase.swift */; };
+		60EEEA2B1B3254FD00367189 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EEEA2A1B3254FD00367189 /* HelpView.swift */; };
 		60F013641B1C35620068B1AF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F013631B1C35620068B1AF /* AVFoundation.framework */; };
 		9CFD57A41B2FAD9D00CD9935 /* APIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD57A31B2FAD9D00CD9935 /* APIFunctions.swift */; };
 		9CFD57A61B2FB1E900CD9935 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD57A51B2FB1E900CD9935 /* Extensions.swift */; };
@@ -104,6 +105,7 @@
 		60EA50D01B1D487C0015C2D1 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		60EBCAA21B0170DA0071D1C4 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		60EBCAA91B0171C90071D1C4 /* SSDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SSDatabase.swift; path = ../SSDatabase.swift; sourceTree = "<group>"; };
+		60EEEA2A1B3254FD00367189 /* HelpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		60F013631B1C35620068B1AF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9CFD57A31B2FAD9D00CD9935 /* APIFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFunctions.swift; sourceTree = "<group>"; };
 		9CFD57A51B2FB1E900CD9935 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				5D3B0DC61AC92D1E00BD8464 /* DisclaimerViewController.swift */,
 				5D3B0DC81AC92DB200BD8464 /* HelpViewController.swift */,
 				5D3B0DCA1AC92E7600BD8464 /* AboutAppViewController.swift */,
+				60EEEA2A1B3254FD00367189 /* HelpView.swift */,
 				5D3B0DCC1AC92E8500BD8464 /* AboutCSViewController.swift */,
 				5D3B0DCE1AC9318100BD8464 /* HelpItemController.swift */,
 				5D9F8B1B1AD7939800C3C710 /* TileSettingsTableViewController.swift */,
@@ -392,6 +395,7 @@
 				5D4F056B1ADCDA48000D9916 /* StartupOneViewController.swift in Sources */,
 				9CFD57AC1B2FB8B400CD9935 /* ConnectionDetector.swift in Sources */,
 				5D202E711ABBF4F100375C9C /* PageItemController.swift in Sources */,
+				60EEEA2B1B3254FD00367189 /* HelpView.swift in Sources */,
 				5D3B0DCD1AC92E8500BD8464 /* AboutCSViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
