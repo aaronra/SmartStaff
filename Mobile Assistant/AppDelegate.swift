@@ -10,6 +10,7 @@ import UIKit
 import MapKit
 import CoreLocation
 import QuartzCore
+import Photos
 
 
 extension UIColor {

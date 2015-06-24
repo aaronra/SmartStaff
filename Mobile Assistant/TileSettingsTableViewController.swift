@@ -17,6 +17,7 @@ class TileSettingsTableViewController: UITableViewController, UITextFieldDelegat
     var imageSize: Float = 0
     var sendOnTap: Bool = false
     var safetySend: Bool = false
+  
     
     @IBOutlet weak var imgIcon: UIImageView!
     @IBOutlet weak var txtTitle: UITextField!
@@ -337,9 +338,11 @@ class TileSettingsTableViewController: UITableViewController, UITextFieldDelegat
     @IBAction func sendToCloudstaffer(sender: UISwitch) {
         println(sender.on)
         sendToCloudstaffer = sender.on
+       
     }
     
     @IBAction func sendToEmail(sender: UISwitch) {
+    
         println(sender.on)
         sendToEmail = sender.on
     }
@@ -373,6 +376,7 @@ class TileSettingsTableViewController: UITableViewController, UITextFieldDelegat
         }
     }
     
+    
     func hideKeyboard() {
         txtTitle.resignFirstResponder()
         txtUsername.resignFirstResponder()
@@ -382,7 +386,7 @@ class TileSettingsTableViewController: UITableViewController, UITextFieldDelegat
     }
     
     func setSendOnTap() {
-        let optionMenu = UIAlertController(title: "What is Send on Tap?", message: "When enabling Send on Tap for this Tile - message(s) will be automatically sent when the icon is tapped - you will not need to press the Cloudstaff Logo to send.", preferredStyle: UIAlertControllerStyle.ActionSheet)
+        let optionMenu = UIAlertController(title: "What is Send on Tap?", message: "When enabling Send on Tap for this Tile - message(s) will be automatically sent when the icon is tapped - you will not need to press the SmartStaff Logo to send.", preferredStyle: UIAlertControllerStyle.ActionSheet)
         
         let okAtion = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: {
             (alert: UIAlertAction!) -> Void in
@@ -395,9 +399,8 @@ class TileSettingsTableViewController: UITableViewController, UITextFieldDelegat
         self.presentViewController(optionMenu, animated: true, completion: nil)
     }
     
-    
     func setSafetySend() {
-        let optionMenu = UIAlertController(title: "Safety Send", message: "Are you sure you want to send this message to {Cloudstaffer}?", preferredStyle: UIAlertControllerStyle.ActionSheet)
+        let optionMenu = UIAlertController(title: "Safety Send", message: "Are you sure you want to send this message?", preferredStyle: UIAlertControllerStyle.ActionSheet)
         
         let okAtion = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: {
             (alert: UIAlertAction!) -> Void in

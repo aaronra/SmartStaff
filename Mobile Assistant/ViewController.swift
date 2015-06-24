@@ -347,7 +347,7 @@ class ViewController: UIViewController, SideBarDelegate, UIPageViewControllerDat
         let title = "Choose an Action"
         let message = ""
         let optionOneText = "Barcode Scanner"
-        let optionTwoText = "Camera"
+        let optionTwoText = "Camera and Photo Album"
         let cancelButtonTitle = "Cancel"
         
         let actionsheet = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.ActionSheet)
@@ -355,38 +355,27 @@ class ViewController: UIViewController, SideBarDelegate, UIPageViewControllerDat
         let BarcodeButton = UIAlertAction(title: optionOneText, style: UIAlertActionStyle.Default) { (BarcodeScannerSelected) -> Void in
             self.performSegueWithIdentifier("toBarcodeScanner", sender: self)
         }
-        let Camera =  UIAlertAction(title: optionTwoText, style: UIAlertActionStyle.Default) { (CameraSelected) -> Void in
-            
-            UIImagePickerController.isSourceTypeAvailable(.Camera)
-            var picker : UIImagePickerController = UIImagePickerController()
-            self.imagePicker.delegate = self
-            self.imagePicker.sourceType = UIImagePickerControllerSourceType.Camera;
-            self.imagePicker.allowsEditing = false
-            
-            //            let image = UIGraphicsGetImageFromCurrentImageContext()
-            //            UIGraphicsEndImageContext()
-            //            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-            
-            self.presentViewController(self.imagePicker, animated: true, completion: nil)
+        let CameraandPhotolibrary =  UIAlertAction(title: optionTwoText, style: UIAlertActionStyle.Default) { (CameraSelected) -> Void in
             
             
-            println("take a photo")
+            self.performSegueWithIdentifier("toCameraAndPhotoLibrary", sender: self)
             
-        }
+            }
+        
         let Cancel = UIAlertAction(title: cancelButtonTitle, style: UIAlertActionStyle.Cancel){ (CancelSelected) -> Void in
             
         }
         
         actionsheet.addAction(BarcodeButton)
         
-        actionsheet.addAction(Camera)
+        actionsheet.addAction(CameraandPhotolibrary)
         
         actionsheet.addAction(Cancel)
         
         self.presentViewController(actionsheet, animated: true, completion: nil)
     
     }
-    
+        
     
     @IBAction func editText(sender: UIButton) {
         var inputTextField: UITextField?
@@ -420,7 +409,7 @@ class ViewController: UIViewController, SideBarDelegate, UIPageViewControllerDat
         println(prefs.integerForKey("selectedTile"))
         if prefs.integerForKey("selectedTile") != 0 {
             if safetySend[prefs.integerForKey("selectedTile")] {
-                let optionMenu = UIAlertController(title: "Safety Send", message: "Are you sure you want to send this message to {Cloudstaffer}?", preferredStyle: UIAlertControllerStyle.ActionSheet)
+                let optionMenu = UIAlertController(title: "Safety Send", message: "Are you sure you want to send this message?", preferredStyle: UIAlertControllerStyle.ActionSheet)
                 
                 
                 let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: {

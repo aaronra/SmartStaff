@@ -76,7 +76,7 @@ class PageItemController: UIViewController, UICollectionViewDelegate {
         } else {
             if sendOnTap[indexPath.row] {
                 if safetySend[indexPath.row] {
-                    let optionMenu = UIAlertController(title: "Safety Send", message: "Are you sure you want to send this message to {Cloudstaffer}?", preferredStyle: UIAlertControllerStyle.ActionSheet)
+                    let optionMenu = UIAlertController(title: "Safety Send", message: "Are you sure you want to send this message?", preferredStyle: UIAlertControllerStyle.ActionSheet)
                     
                     
                     let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: {

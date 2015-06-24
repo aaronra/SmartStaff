@@ -38,10 +38,14 @@
 		60E143451B0C18D500D4207C /* LoginSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E143441B0C18D500D4207C /* LoginSS.swift */; };
 		60E2369B1B14485A0054F8BD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E2369A1B1448590054F8BD /* MapKit.framework */; };
 		60E542A31B2000580017342F /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E542A21B2000580017342F /* AudioRecorder.swift */; };
+		60E62D501B33F507008408E7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E62D4F1B33F507008408E7 /* MobileCoreServices.framework */; };
+		60E891FA1B37ABC2006B6884 /* PhotoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E891F91B37ABC2006B6884 /* PhotoLibrary.swift */; };
 		60E90AE41B0AB2C800370317 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D202E501ABBBFE100375C9C /* Images.xcassets */; };
 		60E9C6211B153A31004D6D6F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E9C6201B153A31004D6D6F /* CoreLocation.framework */; };
 		60E9C6231B153A6E004D6D6F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E9C6221B153A6E004D6D6F /* LocationManager.swift */; };
 		60E9C6251B156316004D6D6F /* SSMapview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E9C6241B156316004D6D6F /* SSMapview.swift */; };
+		60EA14971B37B53500911407 /* ViewPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EA14961B37B53500911407 /* ViewPhoto.swift */; };
+		60EA14A11B37EB2F00911407 /* PhotoThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EA14A01B37EB2F00911407 /* PhotoThumbnail.swift */; };
 		60EA50D11B1D487C0015C2D1 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EA50D01B1D487C0015C2D1 /* MessageUI.framework */; };
 		60EBCAA31B0170DA0071D1C4 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EBCAA21B0170DA0071D1C4 /* libc++.dylib */; };
 		60EBCAAA1B0171C90071D1C4 /* SSDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EBCAA91B0171C90071D1C4 /* SSDatabase.swift */; };
@@ -99,9 +103,13 @@
 		60E143441B0C18D500D4207C /* LoginSS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginSS.swift; path = ../LoginSS.swift; sourceTree = "<group>"; };
 		60E2369A1B1448590054F8BD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		60E542A21B2000580017342F /* AudioRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		60E62D4F1B33F507008408E7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		60E891F91B37ABC2006B6884 /* PhotoLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoLibrary.swift; sourceTree = "<group>"; };
 		60E9C6201B153A31004D6D6F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		60E9C6221B153A6E004D6D6F /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		60E9C6241B156316004D6D6F /* SSMapview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSMapview.swift; sourceTree = "<group>"; };
+		60EA14961B37B53500911407 /* ViewPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPhoto.swift; sourceTree = "<group>"; };
+		60EA14A01B37EB2F00911407 /* PhotoThumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoThumbnail.swift; sourceTree = "<group>"; };
 		60EA50D01B1D487C0015C2D1 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		60EBCAA21B0170DA0071D1C4 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		60EBCAA91B0171C90071D1C4 /* SSDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SSDatabase.swift; path = ../SSDatabase.swift; sourceTree = "<group>"; };
@@ -119,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60E62D501B33F507008408E7 /* MobileCoreServices.framework in Frameworks */,
 				60EA50D11B1D487C0015C2D1 /* MessageUI.framework in Frameworks */,
 				60F013641B1C35620068B1AF /* AVFoundation.framework in Frameworks */,
 				6055CA191B17F012008C7D95 /* QuartzCore.framework in Frameworks */,
@@ -167,9 +176,12 @@
 				60E143441B0C18D500D4207C /* LoginSS.swift */,
 				60E06DDE1B059077000341A4 /* SSBarcodeScanner.swift */,
 				5D202E4B1ABBBFE100375C9C /* ViewController.swift */,
+				60E891F91B37ABC2006B6884 /* PhotoLibrary.swift */,
+				60EA14961B37B53500911407 /* ViewPhoto.swift */,
 				60E542A21B2000580017342F /* AudioRecorder.swift */,
 				60E9C6241B156316004D6D6F /* SSMapview.swift */,
 				5D202E4D1ABBBFE100375C9C /* Main.storyboard */,
+				60EA14A01B37EB2F00911407 /* PhotoThumbnail.swift */,
 				5D202E501ABBBFE100375C9C /* Images.xcassets */,
 				5D202E521ABBBFE100375C9C /* LaunchScreen.xib */,
 				5D202E691ABBC33500375C9C /* SidebarLibrary */,
@@ -249,6 +261,7 @@
 		60EBCAA41B0170E10071D1C4 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				60E62D4F1B33F507008408E7 /* MobileCoreServices.framework */,
 				60EA50D01B1D487C0015C2D1 /* MessageUI.framework */,
 				60F013631B1C35620068B1AF /* AVFoundation.framework */,
 				6055CA181B17F012008C7D95 /* QuartzCore.framework */,
@@ -382,12 +395,14 @@
 				5D3B0DCF1AC9318100BD8464 /* HelpItemController.swift in Sources */,
 				60EBCAAA1B0171C90071D1C4 /* SSDatabase.swift in Sources */,
 				5D4F05731ADCF43D000D9916 /* StartupFiveViewController.swift in Sources */,
+				60E891FA1B37ABC2006B6884 /* PhotoLibrary.swift in Sources */,
 				5D202E4A1ABBBFE100375C9C /* AppDelegate.swift in Sources */,
 				9CFD57A61B2FB1E900CD9935 /* Extensions.swift in Sources */,
 				5D4F056F1ADCF41C000D9916 /* StartupThreeViewController.swift in Sources */,
 				5D4F056D1ADCF3DE000D9916 /* StartupTwoViewController.swift in Sources */,
 				60E143451B0C18D500D4207C /* LoginSS.swift in Sources */,
 				5D3B0DCB1AC92E7600BD8464 /* AboutAppViewController.swift in Sources */,
+				60EA14A11B37EB2F00911407 /* PhotoThumbnail.swift in Sources */,
 				5DD3C2821ADB46FD00E8B864 /* IconCell.swift in Sources */,
 				60E9C6251B156316004D6D6F /* SSMapview.swift in Sources */,
 				60E542A31B2000580017342F /* AudioRecorder.swift in Sources */,
@@ -395,6 +410,7 @@
 				5D4F056B1ADCDA48000D9916 /* StartupOneViewController.swift in Sources */,
 				9CFD57AC1B2FB8B400CD9935 /* ConnectionDetector.swift in Sources */,
 				5D202E711ABBF4F100375C9C /* PageItemController.swift in Sources */,
+				60EA14971B37B53500911407 /* ViewPhoto.swift in Sources */,
 				60EEEA2B1B3254FD00367189 /* HelpView.swift in Sources */,
 				5D3B0DCD1AC92E8500BD8464 /* AboutCSViewController.swift in Sources */,
 			);

@@ -56,7 +56,7 @@ class AudioRecorder: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDel
         stopButton.enabled = false
         playButton.enabled = true
         recordButton.enabled = true
-        
+    
         if audioRecorder?.recording == true {
             audioRecorder?.stop()
         } else {
@@ -67,6 +67,7 @@ class AudioRecorder: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDel
     
     @IBAction func Backtomain(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
+
     }
 
 
@@ -81,7 +82,7 @@ class AudioRecorder: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDel
             .UserDomainMask, true)
         let docsDir = dirPaths[0] as! String
         let soundFilePath =
-        docsDir.stringByAppendingPathComponent("sound.caf")
+        docsDir.stringByAppendingPathComponent("sound.aac")
         let soundFileURL = NSURL(fileURLWithPath: soundFilePath)
         let recordSettings =
         [AVEncoderAudioQualityKey: AVAudioQuality.Min.rawValue,
@@ -108,7 +109,7 @@ class AudioRecorder: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDel
             audioRecorder?.prepareToRecord()
         }
         
-}
+    }
     func audioPlayerDidFinishPlaying(player: AVAudioPlayer!, successfully flag: Bool) {
         recordButton.enabled = true
         stopButton.enabled = false

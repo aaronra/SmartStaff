@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>F338787D-1556-4E17-9D33-0C6ABA7ECCC4</string>
 	<key>IDESourceControlProjectName</key>
-	<string>SmartStaff</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>CE11E292163EE1C5009E8588E6D9861B98EA2B5B</key>
 		<string>https://github.com/neon0619/SmartStaff_demo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SmartStaff.xcodeproj</string>
+	<string>SmartStaff.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>CE11E292163EE1C5009E8588E6D9861B98EA2B5B</key>
